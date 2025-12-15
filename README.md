@@ -16,4 +16,6 @@ Booth's algorithm is an efficient method for multiplying two binary numbers, it 
 5. The final product is the resulting value of the combined {A, Q} register.
 
 ## Datapath
+![datapath diagram](https://github.com/sudhansh004/booth-multiplier-verilog/blob/main/datapath.drawio.png)
+
 

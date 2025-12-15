@@ -18,4 +18,9 @@ Booth's algorithm is an efficient method for multiplying two binary numbers, it 
 ## Datapath
 ![datapath diagram](https://github.com/sudhansh004/booth-multiplier-verilog/blob/main/datapath.drawio.png)
 
+## Controller Path and resulting FSM
+![controller diagram](https://github.com/sudhansh004/booth-multiplier-verilog/blob/main/controller%20path.png)
+
+
+
 

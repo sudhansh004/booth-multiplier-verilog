@@ -5,8 +5,8 @@ The design performs 8-bit signed multiplication using Booth's algorithm and has 
 
 
 ## Booth's Algorithm:
-Booth's algorithm is an efficient method for multiplying two binary numbers, it reduces the number of shift and add operations by taking two consecutive bits of the multiplier and deciding wheter to add or subtract the multiplicand into the partial product. It uses a registers **Accumulator**, **Q** and a flip flop **Qm1**, where a Accumulator holds the partial product, Q holds the multipllicand and Qm1 is loaded with the LSB of Q register. The algorithm is as follows:
-1. Initialize **A** with 0, **Q** with multiplicand, **Qm1** with 0 and load the multiplier in a register **M**.
+Booth's algorithm is an efficient method for multiplying two binary numbers, it reduces the number of shift and add operations compared to the traditional shift and add algorithms by taking two consecutive bits of the multiplier and deciding wheter to add or subtract the multiplicand into the partial product. It uses a registers **Accumulator**, **Q** and a flip flop **Qm1**, where a Accumulator holds the partial product, Q holds the multipllicand and Qm1 is loaded with the LSB of Q register. The algorithm is as follows:
+1. Initialize **A** with 0, **Q** with multiplier, **Qm1** with 0 and load the multiplicand in a register **M**.
 2. Check the value of {LSB of Q, Qm1}.
    - If the value is **01**, Add the value of M to A and store the result in A.
    - If the value is **10** , Subtract M from A and store the value in A.
@@ -20,6 +20,13 @@ Booth's algorithm is an efficient method for multiplying two binary numbers, it 
 
 ## Controller Path and resulting FSM
 ![controller diagram](https://github.com/sudhansh004/booth-multiplier-verilog/blob/main/controller%20path.png)
+
+you can check the rtl folder for program files and download them to run on your computer. 
+
+## Simulation Results On vivado waveform visualisation
+![Simulation result](https://github.com/sudhansh004/booth-multiplier-verilog/blob/main/simulation%20result.png)
+
+
 
 
 
